@@ -1,3 +1,11 @@
+> ⭐ If you find this project useful, please consider giving it a star!
+
+> ⭐ Reach me out on [LinkedIn](https://www.linkedin.com/in/mammarali/) in case you need any help.
+
+> ⭐ Hire me on Fiverr [Fiverr](https://www.fiverr.com/s/qDzrkwX).
+
+> ⭐ Schedule a Meeting with me [Topmate](https://topmate.io/i_am_ammar_ali/) . 
+
 # 🖼️ Watermark Removal System
 
 A deep learning-based image inpainting system that automatically detects and removes watermarks from images — producing clean, high-quality outputs without visible artifacts.
@@ -169,11 +177,3 @@ This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ---
 
-## 🙋‍♂️ Author
-
-**Ammar Ali**
-- GitHub: [@Ammar-Ali234](https://github.com/Ammar-Ali234)
-
----
-
-> ⭐ If you find this project useful, please consider giving it a star!
