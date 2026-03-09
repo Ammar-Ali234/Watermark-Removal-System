@@ -8,12 +8,15 @@ RUN apt-get update -qq && \
 
 RUN git clone https://github.com/JiahuiYu/neuralgym.git /tmp/neuralgym && \
     pip install --no-cache-dir /tmp/neuralgym && \
-    rm -rf /tmp/neuralgym && \
-    pip install --no-cache-dir opencv-python==4.9.0.80 Pillow numpy pyyaml
+    rm -rf /tmp/neuralgym
 
 RUN adduser nonroot
 USER nonroot
 COPY --chown=nonroot:nonroot ./ /repo
 WORKDIR /repo
 
-ENTRYPOINT ["/usr/bin/env", "python", "/repo/main.py"]
+RUN pip install --no-cache-dir -r requirements.txt
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
